@@ -1,0 +1,82 @@
+ body {
+   padding: 0;
+   margin: 0;
+ }
+
+ h1 {
+  color: black;
+  font-family: 'Righteous';
+  font-size: 40px;
+  align-self:center;
+  margin-left: 70%;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1:hover {
+  cursor: default;
+}
+
+#colors {
+ color: yellow;
+ font-family: 'Francois One';
+ font-size: 40px;
+ align-self:center;
+ margin-left: 70%;
+ margin-right: 20%;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+#size {
+ font-family: 'Righteous';
+ font-size: 40px;
+ align-self:center;
+ margin-left: 70%;
+ margin-right: 25%;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+#tela {
+  position:absolute;
+  z-index: -100;
+}
+
+#upper {
+  position:relative;
+  z-index: 100;
+  margin-top: 0%;
+  padding-top: 10%;
+  margin-left: 0; padding-left: 0; border-left: 0;
+  align: center;
+}
+
+#colors:hover {
+  animation-name: coloring;
+  animation-duration: 2s;
+  animation-direction: both;
+  animation-iteration-count: infinite;
+  cursor : pointer;
+}
+
+@keyframes coloring {
+  0% {color:yellow;}
+  50% {color:red;}
+  100% {color:yellow;}
+}
+
+#size:hover {
+  animation-name: sizing;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  cursor : pointer;
+}
+
+@keyframes sizing {
+  0% {font-size:40px;}
+  50% {font-size:80px;}
+  100% {font-size:40px;}
+}
